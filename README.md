@@ -32,8 +32,8 @@ You can specify:
 - `"momentum"` : Momentum used during training on the clients
 
 ### Compression Method
-
-- `"compression"` : Choose from `[["none", {}], ["fedavg", {"n" : ?}], ["signsgd", {"lr" : ?}], ["stc_updown", [{"p_up" : ?, "p_down" : ?}]], ["stc_up", {"p_up" : ?}], ["dgc_updown", [{"p_up" : ?, "p_down" : ?}]], ["dgc_up", {"p_up" : ?}] ]`
+#### Note: Parameter __n__ in FedAvg means number of local training for each client, in other words the latency for update
+- `"compression"` : Choose from `[["none", {}], ["fed_avg", {"n" : ?}], ["signsgd", {"lr" : ?}], ["stc_updown", [{"p_up" : ?, "p_down" : ?}]], ["stc_up", {"p_up" : ?}], ["dgc_updown", [{"p_up" : ?, "p_down" : ?}]], ["dgc_up", {"p_up" : ?}] ]`
 
 ### Logging 
 - `"log_frequency"` : Number of communication rounds after which results are logged and saved to disk
