@@ -32,7 +32,7 @@ You can specify:
 - `"momentum"` : Momentum used during training on the clients
 
 ### Compression Method
-# Note: **n** in FedAvg means number of local training for each client, in other words the latency for update
+### Note: __n__ in FedAvg means number of local training for each client, in other words the latency for update
 - `"compression"` : Choose from `[["none", {}], ["fed_avg", {"n" : ?}], ["signsgd", {"lr" : ?}], ["stc_updown", [{"p_up" : ?, "p_down" : ?}]], ["stc_up", {"p_up" : ?}], ["dgc_updown", [{"p_up" : ?, "p_down" : ?}]], ["dgc_up", {"p_up" : ?}] ]`
 
 ### Logging 
